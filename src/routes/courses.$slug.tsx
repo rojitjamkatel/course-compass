@@ -51,7 +51,7 @@ function CourseNotFound() {
 type Tab = "subjects" | "careers" | "eligibility";
 
 function CourseDetailPage() {
-  const course = Route.useLoaderData();
+  const course = Route.useLoaderData()!;
   const [activeTab, setActiveTab] = useState<Tab>("subjects");
 
   const tabs: { key: Tab; label: string }[] = [
