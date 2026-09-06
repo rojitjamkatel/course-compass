@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 
-import { courses, getCourseBySlug } from "../lib/courses";
+import { courses, getCourseBySlug, type Course } from "../lib/courses";
 import courseLabImage from "../assets/course-lab.jpg";
 
 export const Route = createFileRoute("/courses/$slug")({
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/courses/$slug")({
       ],
     };
   },
-  loader: ({ params }) => {
+  loader: ({ params }): Course => {
     const course = getCourseBySlug(params.slug);
     if (!course) throw notFound();
     return course;
@@ -52,7 +52,6 @@ type Tab = "subjects" | "careers" | "eligibility";
 
 function CourseDetailPage() {
   const course = Route.useLoaderData();
-  if (!course) return <CourseNotFound />;
   const [activeTab, setActiveTab] = useState<Tab>("subjects");
 
   const tabs: { key: Tab; label: string }[] = [
