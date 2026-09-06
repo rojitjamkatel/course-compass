@@ -3,10 +3,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Himalayan College" },
-      { name: "description", content: "Learn about Himalayan College of Business & Technology, our mission, campus, and commitment to student success." },
-      { property: "og:title", content: "About — Himalayan College" },
-      { property: "og:description", content: "Learn about Himalayan College of Business & Technology, our mission, campus, and commitment to student success." },
+      { title: "About — MMC Makwanpur Multiple Campus" },
+      { name: "description", content: "Learn about MMC Makwanpur Multiple Campus, our mission, campus, and commitment to student success." },
+      { property: "og:title", content: "About — MMC Makwanpur Multiple Campus" },
+      { property: "og:description", content: "Learn about MMC Makwanpur Multiple Campus, our mission, campus, and commitment to student success." },
     ],
   }),
   component: AboutPage,
@@ -35,7 +35,7 @@ function AboutPage() {
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight text-ink">Our mission</h2>
             <p className="mt-4 leading-relaxed text-muted-warm">
-              Himalayan College of Business & Technology exists to make higher education transparent. We run four undergraduate programmes — BBA, BICTE, BBM, and BBS — each mapped to real career paths and local industry needs.
+              MMC Makwanpur Multiple Campus exists to make higher education transparent. We run four undergraduate programmes — BBA, BICTE, BBM, and BBS — each mapped to real career paths and local industry needs.
             </p>
             <p className="mt-4 leading-relaxed text-muted-warm">
               Our faculty combine academic training with practical experience, and our campus is designed for focused study, group work, and hands-on projects.

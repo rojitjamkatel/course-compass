@@ -5,10 +5,10 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Himalayan College" },
-      { name: "description", content: "Get in touch with Himalayan College admissions. Book a counselling call, request a syllabus, or schedule a campus visit." },
-      { property: "og:title", content: "Contact — Himalayan College" },
-      { property: "og:description", content: "Get in touch with Himalayan College admissions. Book a counselling call, request a syllabus, or schedule a campus visit." },
+      { title: "Contact — MMC Makwanpur Multiple Campus" },
+      { name: "description", content: "Get in touch with MMC Makwanpur Multiple Campus admissions. Book a counselling call, request a syllabus, or schedule a campus visit." },
+      { property: "og:title", content: "Contact — MMC Makwanpur Multiple Campus" },
+      { property: "og:description", content: "Get in touch with MMC Makwanpur Multiple Campus admissions. Book a counselling call, request a syllabus, or schedule a campus visit." },
     ],
   }),
   component: ContactPage,

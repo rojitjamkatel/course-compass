@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Himalayan College of Business & Technology" },
+      { title: "MMC Makwanpur Multiple Campus" },
       { name: "description", content: "Explore BBA, BICTE, BBM, and BBS programmes. Find the right course for your future." },
-      { property: "og:title", content: "Himalayan College of Business & Technology" },
+      { property: "og:title", content: "MMC Makwanpur Multiple Campus" },
       { property: "og:description", content: "Explore BBA, BICTE, BBM, and BBS programmes. Find the right course for your future." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@HimalayanCollege" },
+      { name: "twitter:site", content: "@MMCK" },
     ],
     links: [
       {
@@ -125,10 +125,10 @@ function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="grid size-8 place-items-center rounded-full bg-brand font-[family-name:var(--font-display)] text-sm font-semibold text-cream">
-            H
+            M
           </span>
           <span className="font-[family-name:var(--font-display)] text-lg font-medium tracking-tight text-ink">
-            Himalayan College
+            MMC Makwanpur Multiple Campus
           </span>
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium text-muted-warm sm:flex">
@@ -160,10 +160,10 @@ function Footer() {
         <div>
           <div className="mb-3 flex items-center gap-2.5">
             <span className="grid size-8 place-items-center rounded-full bg-brand font-[family-name:var(--font-display)] text-sm font-semibold text-cream">
-              H
+              M
             </span>
             <span className="font-[family-name:var(--font-display)] text-lg font-medium text-cream">
-              Himalayan College
+              MMC Makwanpur Multiple Campus
             </span>
           </div>
           <p className="max-w-[36ch] text-pretty text-sm leading-relaxed text-cream/60">

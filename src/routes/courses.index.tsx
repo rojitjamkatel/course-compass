@@ -7,10 +7,10 @@ import { courses, searchCourses } from "../lib/courses";
 export const Route = createFileRoute("/courses/")({
   head: () => ({
     meta: [
-      { title: "Programmes — Himalayan College" },
-      { name: "description", content: "Browse all undergraduate programmes at Himalayan College: BBA, BICTE, BBM, and BBS. Compare subjects, duration, and career outcomes." },
-      { property: "og:title", content: "Programmes — Himalayan College" },
-      { property: "og:description", content: "Browse all undergraduate programmes at Himalayan College: BBA, BICTE, BBM, and BBS. Compare subjects, duration, and career outcomes." },
+      { title: "Programmes — MMC Makwanpur Multiple Campus" },
+      { name: "description", content: "Browse all undergraduate programmes at MMC Makwanpur Multiple Campus: BBA, BICTE, BBM, and BBS. Compare subjects, duration, and career outcomes." },
+      { property: "og:title", content: "Programmes — MMC Makwanpur Multiple Campus" },
+      { property: "og:description", content: "Browse all undergraduate programmes at MMC Makwanpur Multiple Campus: BBA, BICTE, BBM, and BBS. Compare subjects, duration, and career outcomes." },
     ],
   }),
   component: CoursesPage,
