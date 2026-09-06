@@ -7,10 +7,10 @@ import courseLabImage from "../assets/course-lab.jpg";
 export const Route = createFileRoute("/courses/$slug")({
   head: ({ params }) => {
     const course = getCourseBySlug(params.slug);
-    const title = course ? `${course.fullName} — Himalayan College` : "Programme — Himalayan College";
+    const title = course ? `${course.fullName} — MMC Makwanpur Multiple Campus` : "Programme — MMC Makwanpur Multiple Campus";
     const description = course
       ? `Explore the ${course.fullName} programme: ${course.duration}, subjects, eligibility, and career outcomes.`
-      : "Explore undergraduate programmes at Himalayan College.";
+      : "Explore undergraduate programmes at MMC Makwanpur Multiple Campus.";
     return {
       meta: [
         { title },
