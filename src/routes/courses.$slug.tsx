@@ -22,7 +22,7 @@ export const Route = createFileRoute("/courses/$slug")({
       ],
     };
   },
-  loader: ({ params }): Course => {
+  loader: ({ params }) => {
     const course = getCourseBySlug(params.slug);
     if (!course) throw notFound();
     return course;
@@ -51,7 +51,7 @@ function CourseNotFound() {
 type Tab = "subjects" | "careers" | "eligibility";
 
 function CourseDetailPage() {
-  const course = Route.useLoaderData()!;
+  const course = Route.useLoaderData() as Course;
   const [activeTab, setActiveTab] = useState<Tab>("subjects");
 
   const tabs: { key: Tab; label: string }[] = [
