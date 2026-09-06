@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Explore BBA, BICTE, BBM, and BBS programmes. Find the right course for your future." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@HimalayanCollege" },
+      { name: "twitter:site", content: "@MMCK" },
     ],
     links: [
       {
@@ -125,7 +125,7 @@ function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="grid size-8 place-items-center rounded-full bg-brand font-[family-name:var(--font-display)] text-sm font-semibold text-cream">
-            H
+            M
           </span>
           <span className="font-[family-name:var(--font-display)] text-lg font-medium tracking-tight text-ink">
             MMC Makwanpur Multiple Campus
@@ -160,7 +160,7 @@ function Footer() {
         <div>
           <div className="mb-3 flex items-center gap-2.5">
             <span className="grid size-8 place-items-center rounded-full bg-brand font-[family-name:var(--font-display)] text-sm font-semibold text-cream">
-              H
+              M
             </span>
             <span className="font-[family-name:var(--font-display)] text-lg font-medium text-cream">
               MMC Makwanpur Multiple Campus
