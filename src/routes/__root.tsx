@@ -175,22 +175,22 @@ function Footer() {
             <h3 className="mb-3 font-medium text-cream">Programmes</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/courses/bba" className="transition-colors hover:text-cream">
+                <Link to="/courses/$slug" params={{ slug: "bba" }} className="transition-colors hover:text-cream">
                   BBA
                 </Link>
               </li>
               <li>
-                <Link to="/courses/bicte" className="transition-colors hover:text-cream">
+                <Link to="/courses/$slug" params={{ slug: "bicte" }} className="transition-colors hover:text-cream">
                   BICTE
                 </Link>
               </li>
               <li>
-                <Link to="/courses/bbm" className="transition-colors hover:text-cream">
+                <Link to="/courses/$slug" params={{ slug: "bbm" }} className="transition-colors hover:text-cream">
                   BBM
                 </Link>
               </li>
               <li>
-                <Link to="/courses/bbs" className="transition-colors hover:text-cream">
+                <Link to="/courses/$slug" params={{ slug: "bbs" }} className="transition-colors hover:text-cream">
                   BBS
                 </Link>
               </li>
